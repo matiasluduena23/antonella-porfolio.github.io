@@ -8,6 +8,46 @@
     <title>Antonella</title>
 </head>
 <body>
+
+    <!-- Header -->
+    <nav id="nav">
+        <div class="container flex">
+            <a href="#home" class="logo">
+                <p>logo</p>
+            </a>
+            <button class="btn-toggle" aria-expanded="false">
+                <svg fill="var(--btn-clr)" class="hamburger" viewBox="0 0 100 100" width="35">
+                    <rect class="line top" 
+                    width="80" height="10"
+                    x="10" y="25" rx="5">
+                    </rect>
+                    <rect class="line middle" 
+                    width="80" height="10"
+                    x="10" y="50" rx="5">
+                    </rect>
+                    <rect class="line bottom" 
+                    width="80" height="10"
+                    x="10" y="75" rx="5">
+                    </rect>
+                </svg>
+            </button>
+            <ul class="items flex" aria-expanded="false">
+                <li >
+                    <a class="nav-link" href="#home">Inicio</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="#about">Sobre mi</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="#services">Servicios</a>
+                </li>
+                <li >
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <section id="home">
         <div class="container">
             <div class="grid-home">
@@ -124,21 +164,27 @@
             </form> 
             <div class="contact-info">
                     <div class="contact-info-wrap">
-                        <img class="contact-info-icon" src="./images/location.svg" >
+                        <div class="contact-info-icon">
+                            <img  src="./images/linkeid.svg" >
+                        </div>
                         <div class="contact-info-text">
                             <p class="info-text-description">LinkedIn</p>
                             <a href="" class="info-text-data">maria antonella</a>
                         </div>
                     </div>
                     <div class="contact-info-wrap">
-                        <img class="contact-info-icon" src="./images/email.svg" >
+                        <div class="contact-info-icon">
+                            <img  src="./images/email.svg" >
+                        </div>
                         <div class="contact-info-text">
                             <p class="info-text-description">Correo Eletronico</p>
                             <a href="" class="info-text-data">marantonella92@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-info-wrap">
-                        <i></i>
+                        <div class="contact-info-icon">
+                            <img  src="./images/location.svg" alt="">
+                        </div>
                         <div class="contact-info-text">
                             <p class="info-text-description">Domicilio</p>
                             <a href="" class="info-text-data">Cordoba Argentina</a>
@@ -148,5 +194,7 @@
             </main>
         </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
