@@ -7,7 +7,7 @@
     
 
     --first-clr: hsl(210, 93%, 95%); 
-    --first-light-clr: hsl(211, 49%, 88%); ;
+    --first-light-clr: hsl(211, 49%, 88%); 
     --secondary-clr: #8dc6ff; 
     --third-clr: #22313f; 
     --fourth-clr: #34495e; 
@@ -381,9 +381,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
-    -moz-appearance: textfield;
-  }
 
 .form-control > input:focus,
 .form-control > textarea:focus {
@@ -462,6 +459,28 @@ input[type=number] {
 
 #footer p > a {
     color: var(--secondary-clr);
+}
+
+/* Success form */
+#success{
+    min-height: 100vh;
+    background: var(--fourth-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.success-message {
+    height: 300px;
+    width:300px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 0;
+    background: var(--third-clr);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--first-light-clr);
 }
 
 @media(min-width: 800px){

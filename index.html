@@ -140,23 +140,23 @@
             <p class="contact-p">Te podes comunicar conmigo completando el siguente formulario o enviando un correo electronico al gmail de la info. Saludos</p>
         
             <main class="grid-contact">
-            <form action="" class="contact-form">
+            <form action="/success.html" name="contact" method="POST" data-netlify="true" class="contact-form">
                     <div class="form-title">Completa el formulario</div>
                     <div class="form-control">
-                        <label for="name">Nombre</label>
-                        <input type="text" class="form-input">
+                        <label for="name" >Nombre</label>
+                        <input type="text" name="name" class="form-input">
                     </div>
                     <div class="form-control">
                         <label for="email">Correo Electronico</label>
-                        <input type="email" class="form-input">
+                        <input type="email" name="email" class="form-input">
                     </div>
                     <div class="form-control">
-                        <label for="name">Telefono</label>
-                        <input type="number" class="form-input">
+                        <label for="phone">Telefono</label>
+                        <input type="number" name="phone" class="form-input">
                     </div>
                     <div class="form-control">
                         <label for="message">Mensaje</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message"  cols="30" rows="10"></textarea>
                     </div>
                     <div class="form-control">
                         <a type="submit" class="btn">Enviar</a>
