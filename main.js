@@ -1,6 +1,7 @@
 const navbar = document.querySelector('.items');
 const btnToggle = document.querySelector('.btn-toggle');
-navLink = document.querySelectorAll('.nav-link')
+const navLink = document.querySelectorAll('.nav-link')
+const navigationHeight = document.querySelector('#nav').offsetHeight;
 
 
 btnToggle.addEventListener('click' , () => {
@@ -12,3 +13,6 @@ navLink.forEach(n => n.addEventListener('click' , () => {
     navbar.classList.remove('active')
     btnToggle.classList.remove('active')
 }))
+
+
+document.documentElement.style.setProperty('--scroll-padding', navigationHeight - 1 +'px');
