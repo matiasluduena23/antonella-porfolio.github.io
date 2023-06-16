@@ -207,6 +207,7 @@ a {
     text-align: center;
     position: relative;
     z-index: 0;
+    border: none;
     overflow: hidden;
 }
 
